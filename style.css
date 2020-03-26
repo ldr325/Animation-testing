@@ -28,12 +28,6 @@ body,html{
 	position: absolute;
 }
 
-.BImg{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 240px;
-}
-
 .top {
 	animation-name: fade;
 	animation-timing-function: ease-in-out;
@@ -100,4 +94,11 @@ body,html{
       color: #70A5B9;}
   100% {text-decoration-color: #70A5B9;
       color: #F7EA8E;}
+}
+
+.BImg{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 240px;
+  animation: mleft 2s mright 2s;
 }
