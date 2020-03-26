@@ -1,0 +1,66 @@
+*{
+  box-sizing: border-box;
+}
+
+body,html{
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.fullWidthImg{
+  width: 100%;
+}
+
+.Banner {
+  position: relative;
+}
+
+.Banner img {
+	position: absolute;
+}
+
+.top {
+	animation-name: fade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-direction: alternate;
+}
+
+@keyframes fade {
+	0% {opacity: 1;}
+	25% {opacity: 1;}
+	75% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+.GridContainer{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  grid-column-gap: 2vmin;
+  grid-row-gap: 2vmin;
+  background-color: #060807;
+}
+
+.item-8x{
+  grid-column-end: span 8;
+}
+
+.Title{
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 64pt;
+  text-decoration: underline;
+  text-decoration-color: #70A5B9;
+  color: #F7EA8E;
+}
+
+.SubTitle{
+  margin-top: 0px;
+  text-align: center;
+  font-size: 32pt;
+  text-decoration: underline;
+  text-decoration-color: #70A5B9;
+  color: #F7EA8E;
+}
